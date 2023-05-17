@@ -1,25 +1,32 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div id="tradingview_ade51"></div>
+  <div id="watchlist-chart-demo"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets</span></a> on TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.widget(
   {
+  "container_id": "watchlist-chart-demo",
+  "width": "100%",
+  "height": "100%",
   "autosize": true,
-  "symbol": "BINANCE:BTCUSDT",
+  "symbol": "BITGET:ZZZUSDT",
   "interval": "D",
-  "timezone": "Etc/UTC",
+  "timezone": "exchange",
   "theme": "light",
   "style": "1",
-  "locale": "en",
   "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
+  "withdateranges": true,
   "allow_symbol_change": true,
-  "container_id": "tradingview_ade51"
+  "save_image": false,
+  "watchlist": [
+    "BITGET:ZZZUSDT",
+    "MEXC:ZZZUSDT",
+    "GATEIO:ZZZUSDT"
+  ],
+  "locale": "en"
 }
   );
   </script>
 </div>
 <!-- TradingView Widget END -->
-
